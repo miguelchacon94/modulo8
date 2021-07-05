@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 from sklearn.ensemble import IsolationForest
 # Generamos el objeto cliente que nos permite establecer la conexión con Elasticsearch
-es = Elasticsearch ('http://[ip_maquina]:9200')
+es = Elasticsearch ('http://192.168.1.24:9200')
 # Obtención de un documento de Elasticsearch a partir de su indice e id del documento
 resp = es.get(index='metricbeat-7.13.2-2021.06.18-000001',id='')
 # Leemos 10.000 documentos del indice metricbeat-*
